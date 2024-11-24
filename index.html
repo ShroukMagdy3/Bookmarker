@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookMarker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="upper p-5 header">
+        <header class="p-5 mb-5 header">
+          <h1 class="display-1 text-center py-2 mb-5">
+            <span>BookMarker</span>
+          </h1>
+        </header>
+        <div>
+          <h3 class="text-center">
+            <i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites
+            <i class="fa-solid fa-bookmark"></i>
+          </h3>
+          <div class="form group my-3">
+            <label for="siteName" class="fw-bolder pb-2"
+              ><i class="fa-solid fa-book-bookmark"></i> Site Name:</label
+            >
+            <input
+              id="siteName"
+              placeholder="Site Name"
+              type="text"
+              class="form-control"
+            />
+          </div>
+          <div class="form group my-3">
+            <label for="siteURL" class="fw-bolder pb-2"
+              ><i class="fa-solid fa-link"></i> Site URL</label
+            >
+            <input
+              id="siteURL"
+              type="url"
+              placeholder="Site URl"
+              class="form-control"
+            />
+
+            <p id="warningMessage" style="color: red"></p>
+          </div>
+          <div class="w-100 d-flex justify-content-center mt-4">
+            <button id="submit" onclick="submit()" class="btn ps-5 pe-5">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+      <table class="table mt-4 text-center bg-light">
+        <thead>
+          <tr>
+            <th class="text-capitalize">index</th>
+            <th class="text-capitalize">Website Name</th>
+            <th class="text-capitalize">Visit</th>
+            <th class="text-capitalize">Delete</th>
+          </tr>
+        </thead>
+        <tbody id="tableContent"></tbody>
+      </table>
+      <a href="https://fontawesome.com/v6/icons/eye?f=classic&s=solid"></a>
+    </div>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
