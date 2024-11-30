@@ -8,7 +8,6 @@ if (localStorage.getItem("sites") != null) {
   sites = JSON.parse(localStorage.getItem("sites"));
   display();
 }
-
 // submit
 function submit() {
   // alert("hi");
@@ -26,7 +25,6 @@ function submit() {
     alert(`Please enter a valid URL and name.`);
   }
 }
-
 function display() {
   var cartoona = "";
   for (var i = 0; i < sites.length; i++) {
@@ -43,13 +41,11 @@ function display() {
   }
   document.getElementById("tableContent").innerHTML = cartoona;
 }
-
 // clear
 function clear() {
   siteName.value = "";
   siteUrl.value = "";
 }
-
 // delete
 function deleteSite(index) {
   sites.splice(index, 1);
