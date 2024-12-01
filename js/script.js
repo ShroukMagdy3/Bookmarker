@@ -34,7 +34,7 @@ function display() {
             <td>${sites[i].name}</td>
             <td><button class="btn"><a href="${
               sites[i].URL
-            }"class="text-white text-decoration-none rounded" id="visit"><i class="fa-solid fa-eye"></i> Visit</a> </button></td>
+            }"class="text-white text-decoration-none rounded" target="_blank" id="visit"><i class="fa-solid fa-eye"></i> Visit</a> </button></td>
             <td><button class="btn btn-danger" onclick ="deleteSite(${i})"> <i class="fa-solid fa-delete-left"></i> Delete</button></td>
           </tr>
         `;
